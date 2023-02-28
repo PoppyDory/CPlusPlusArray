@@ -8,7 +8,12 @@ la funzione dovrebbe restituire l'indice del primo di questi elementi
 
 using namespace std;
 
+int arrrayIndice (int array[], int dimensione)
+{
+
+}
+
 int main() 
 {
-    
+
 }

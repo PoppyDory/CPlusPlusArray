@@ -13,10 +13,11 @@ int arraySequenze(int array[],int dimensione)
     int sequenza=0;
     for (int i = 0; i < dimensione; i++)
     {
-        while(array[i]= i+1)
+        if(array[i]< array[i+1])
         {
             sequenza++;
         }
+
     }
     return sequenza;
 }

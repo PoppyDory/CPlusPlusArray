@@ -8,7 +8,7 @@ using namespace std;
 
 int main()
 {
-    int array[3] = {3, 2, 4};
+    int array[3] = {3, 6, 4};
     int dimensione = sizeof(array) / sizeof(array[0]);
     int arrayPari[2];
     int dimPari = sizeof(arrayPari) / sizeof(arrayPari[0]);
@@ -23,7 +23,8 @@ int main()
 
                 pari = array[i] ;
             }
-        }
+            
+        }cout << arrayPari[pari] << endl;
     } 
-   cout << arrayPari[pari] << endl;
+   
 }
