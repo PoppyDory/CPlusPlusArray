@@ -15,13 +15,7 @@ int main()
 {
     string parola = "";
     bool noUnivoca = false;
-    // string arrayParole[1];
-
-    // int grandezza= sizeof(arrayParole) / sizeof(arrayParole[0]);
     cout << "inserisci parola" << endl;
-
-    // for (int i=0; i<grandezza; i++) //scorro l'array
-    //{
     cin >> parola;
 
     for (int j = 0; j < parola.length(); j++) // scorrp la parola
@@ -37,8 +31,7 @@ int main()
     if (noUnivoca)
     {
         cout << " la parola non e' univoca. " << endl;
-        
-    }
+        }
     else
     {
         cout << "La parola e' univoca" << endl;
