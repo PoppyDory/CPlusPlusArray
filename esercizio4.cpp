@@ -10,9 +10,9 @@ int arrayMaggiore(int array[], int dimensione)
     int maggiore = array[0];
     for (int i = 0; i < dimensione; i++)
     {
-        if (array[i] < array[i + 1])
+        if (array[i] > maggiore)
         {
-            maggiore = array[i + 1];
+            maggiore = array[i];
         }
     }
     return maggiore;
@@ -20,7 +20,7 @@ int arrayMaggiore(int array[], int dimensione)
 
 int main()
 {
-    int array[4] = {4, 2, 3, 6};
+    int array[4] = {8, 2, 7, 6};
     int dimensione = sizeof(array) / sizeof(array[0]);
 
     cout << "Il numero piu' grande e': "<< arrayMaggiore(array,dimensione);

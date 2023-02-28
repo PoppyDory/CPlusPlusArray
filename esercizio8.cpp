@@ -15,5 +15,6 @@ int arrrayIndice (int array[], int dimensione)
 
 int main() 
 {
-
+    int array[4]={1,2,3,4};
+    int dimensione = sizeof(array) / sizeof(array[0]);
 }

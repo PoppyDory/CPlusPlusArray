@@ -1,1 +1,1 @@
-cout << arrayPari[pari] << endl;
+for (int i = 0; i < dimensione; i++)
