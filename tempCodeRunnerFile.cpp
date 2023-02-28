@@ -1,1 +1,1 @@
-  cout<< "univoca";
+cout << arrayPari[pari] << endl;
