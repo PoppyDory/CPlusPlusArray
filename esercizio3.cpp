@@ -6,24 +6,20 @@
 
 using namespace std;
 
-//int arraySomma (int array[], int dimensione)
-//{
-//
-//}
+int arraySomma (int array[], int dimensione)
+{   
+    int somma=0;
+    for (int i=0; i<dimensione; i++)
+    {
+        somma+=array[i];
+    }
+    return somma;
+}
 
 int main()
 {
-    int array[4];
+    int array[4]= {1,3,5,1};
     int dimensione = sizeof(array) / sizeof(array[0]);
-    int somma=0;
-    int numeri=0;
     
-    cout <<"inserisci numeri "<<endl;
-
-    for (int i=0; i<dimensione; i++)
-    {
-        cin>>array[numeri];
-        somma+=array[numeri];
-    }
-    cout<< "la somma e' "<< somma;
+    cout<< "la somma e' "<< arraySomma(array,dimensione);
 }
