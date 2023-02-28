@@ -8,23 +8,42 @@ using namespace std;
 
 int main()
 {
-    int array[3] = {3, 6, 4};
-    int dimensione = sizeof(array) / sizeof(array[0]);
-    int arrayPari[2];
-    int dimPari = sizeof(arrayPari) / sizeof(arrayPari[0]);
+    cout << "Quanto lo vuoi lungo l'array?" << endl;
+    int lungo;
+    cin >> lungo;
+    int array[lungo];
+    cout << "inserisci gli elementi: " << endl;
+    for (int i = 0; i < lungo; i++)
+    {
+        cin >> array[i];
+    }
+
+   
 
     int pari = 0;
-    for (int i = 0; i < dimensione; i++)
+    for (int i = 0; i < lungo; i++)
     {
-        for (int j = 0; j < dimPari; j++)
+        if (array[i] % 2 == 0)
         {
-            if (array[i] % 2 == 1)
-            {
 
-                pari = array[i] ;
-            }
-            
-        }cout << arrayPari[pari] << endl;
+            pari++;
+        }
     } 
-   
+    int arrayPari[pari];
+    int indice=0;
+
+    for (int i=0; i<lungo; i++)
+    {
+        if (array[i]%2==0)
+        {
+            arrayPari[indice]=array[i];
+            indice++;
+        }
+    }
+    cout<< " L'array con gli elementi pari contiene: ";
+    for (int i =0; i<pari; i++)
+    {
+        cout<<arrayPari[i]<< ", ";
+    }
+
 }
