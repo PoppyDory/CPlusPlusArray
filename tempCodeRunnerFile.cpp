@@ -1,1 +1,0 @@
-cout << arrayPari[pari] << endl;
