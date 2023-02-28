@@ -11,12 +11,14 @@ using namespace std;
 int arraySequenze(int array[],int dimensione)
 {
     int sequenza=0;
+
     for (int i = 0; i < dimensione; i++)
     {
-        if(array[i]< array[i+1])
+        while(array[i]< array[i+1])
         {
-            sequenza++;
+            i++;
         }
+        sequenza++;
 
     }
     return sequenza;
