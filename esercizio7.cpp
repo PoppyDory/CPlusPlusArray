@@ -28,7 +28,7 @@ int arraySequenze(int array[], int dimensione)
 
 int main()
 {
-    int array[6] = {9, 8, 6, 5, 4, 1};
+    int array[4] = {5, 6, 2, 2};
     int dimensione = sizeof(array) / sizeof(array[0]);
 
     cout << "Nell' array ci sono " << arraySequenze(array, dimensione) << " sequenze";
