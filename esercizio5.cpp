@@ -7,25 +7,21 @@ using namespace std;
 
 bool arrayOrdinato(int array[], int dimensione)
 {
-    bool ordinato=false;
     for (int i = 0; i < dimensione; i++)
     {
         if (array[i] > array[i + 1])
         {
             return false;
-            break;
+        
         }
-        else 
-        {
-            return true;
-        }
+        
     }
-    return ordinato;
+    return true;
 }
 
 int main()
 {
-    int array[4] = {1, 2, 3, 6};
+    int array[4] = {1, 4, 3, 6};
     int dimensione = sizeof(array) / sizeof(array[0]);
 
     if (arrayOrdinato(array, dimensione)==0)
