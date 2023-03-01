@@ -14,7 +14,7 @@ int arraySequenze(int array[], int dimensione)
 
     for (int i = 0; i < dimensione; i++)
     {
-        if(array[i]<array[i+1])
+        if(array[i]<array[i+1]&& array[i]!=array[dimensione-1])
         {
         while (array[i] < array[i + 1])
         {
@@ -28,7 +28,7 @@ int arraySequenze(int array[], int dimensione)
 
 int main()
 {
-    int array[6] = {9, 8, 6, 5, 4, 7};
+    int array[6] = {9, 8, 6, 5, 4, 1};
     int dimensione = sizeof(array) / sizeof(array[0]);
 
     cout << "Nell' array ci sono " << arraySequenze(array, dimensione) << " sequenze";
