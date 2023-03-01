@@ -28,8 +28,15 @@ int arraySequenze(int array[], int dimensione)
 
 int main()
 {
-    int array[6] = {5, 7, 1, 6, 5, 5};
-    int dimensione = sizeof(array) / sizeof(array[0]);
+    int dimensione;
+    cout << "Quanti elementi deve contenere l'array?" << endl;
+    cin >> dimensione;
+    int array[dimensione];
+    cout << "inserisci numeri " << endl;
+    for (int i = 0; i < dimensione; i++)
+    {
+        cin >> array[i];
+    }
 
     cout << "Nell' array ci sono " << arraySequenze(array, dimensione) << " sequenze";
 }
