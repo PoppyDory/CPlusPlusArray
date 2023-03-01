@@ -13,8 +13,7 @@ bool arrayOrdinato(int array[], int dimensione)
         {
             return false;
         
-        }
-        
+        }       
     }
     return true;
 }

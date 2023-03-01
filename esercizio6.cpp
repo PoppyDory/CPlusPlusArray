@@ -21,7 +21,7 @@ int main()
    
 
     int pari = 0;
-    for (int i = 0; i < lungo; i++)
+    for (int i = 0; i < lungo; i++)// per sapere di quanto deve essere grande l'array dei pari
     {
         if (array[i] % 2 == 0)
         {
@@ -29,7 +29,7 @@ int main()
             pari++;
         }
     } 
-    int arrayPari[pari];
+    int arrayPari[pari];//pari è la lunghezza dell'arrayPari
     int indice=0;
 
     for (int i=0; i<lungo; i++)
