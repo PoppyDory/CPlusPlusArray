@@ -29,6 +29,7 @@ int main()
 {
     int array1[4] = {1, 2, 3, 4};
     int array2[4] = {2, 4, 6, 8};
+    
 
     int dimensione1 = sizeof(array1) / sizeof(array1[0]);
     int dimensione2 = sizeof(array2) / sizeof(array2[0]);
