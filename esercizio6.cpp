@@ -17,7 +17,7 @@ int main()
     {
         cin >> array[i];
     }
-
+    
    
 
     int pari = 0;
