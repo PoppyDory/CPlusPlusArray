@@ -4,3 +4,29 @@ Array1 [0,1,2,3,4]
 Array2 [0,1,2]
 ArrayRisultato [0,1,2,3,4,0,1,2]
 */
+#include <iostream>
+#include <array>
+
+using namespace std;
+
+int main()
+{
+    int array1[5] = {0,1,2,3,4};
+    int array2[3] = {1,2,3};
+    int dimensione1 = sizeof(array1) / sizeof(array1[0]);
+    int dimensione2 = sizeof(array2) / sizeof(array2[0]);
+
+    int dimensione = dimensione1+dimensione2;
+    int arrayRiisultato[dimensione];
+
+    for(int i=0; i<dimensione1; i++)
+    {
+        arrayRiisultato[i]=i; 
+        cout<< arrayRiisultato<<" ";
+    }
+        for(int i=0; i<dimensione2; i++)
+    {
+        arrayRiisultato[i]=i; 
+        cout<< arrayRiisultato<<" ";
+    }
+}
