@@ -1,1 +1,1 @@
-cout << "i numeri in comune sono " << arrayComuni << endl;
+ciclo
