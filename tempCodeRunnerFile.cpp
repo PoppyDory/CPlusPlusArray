@@ -1,1 +1,1 @@
-cout<< arrayRiisultato[i]<<" ";
+cout << "i numeri in comune sono " << arrayComuni << endl;

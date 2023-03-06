@@ -18,14 +18,25 @@ int *arrayContaUguali(int array1[], int array2[], int dimensione1, int dimension
     }
 
     int arrayComuni[uguali];
-    for (int i = 0; i < uguali; i++)
+    int k = 0;
+    for (int i = 0; i < dimensione1; i++)
     {
-        if (array1[i] == array2[i])
+        for (int j = 0; j < dimensione2; j++)
         {
-            arrayComuni[i] = array1[i];
+            if (array1[i] == array2[j])
+            {
+                arrayComuni[k] = array1[i];
+                k++;
+            }
         }
-        cout << "i numeri in comune sono " << arrayComuni << endl;
+    } 
+    
+    cout << "i numeri in comune sono ";
+    for (int i =0; i < uguali; i++)
+    {
+   cout << arrayComuni[i] << ", ";
     }
+
     return arrayComuni;
 }
 
@@ -38,5 +49,4 @@ int main()
 
     int *arrayComuni = arrayContaUguali(array1, array2, dimensione1, dimensione2);
 
-    cout << "I numeri in comune sono: " << arrayComuni;
 }
