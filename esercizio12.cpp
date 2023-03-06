@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int* arrayContaUguali(int array1[], int array2[], int dimensione1, int dimensione2)
+int *arrayContaUguali(int array1[], int array2[], int dimensione1, int dimensione2)
 {
     int uguali = 0;
 
@@ -16,24 +16,15 @@ int* arrayContaUguali(int array1[], int array2[], int dimensione1, int dimension
             }
         }
     }
-    
+
     int arrayComuni[uguali];
     for (int i = 0; i < uguali; i++)
     {
-        for (int j = 0; j < dimensione1; j++)
+        if (array1[i] == array2[i])
         {
-            for (int k = 0; k < dimensione2; k++)
-            {
-                if (array1[j] == array2[k])
-                {
-                    arrayComuni[i] = array1[j];
-                }
-            }
+            arrayComuni[i] = array1[i];
         }
-    }    
-    for (int i = 0; i < uguali; i++)
-    {
-        cout << arrayComuni << endl;
+        cout << "i numeri in comune sono " << arrayComuni << endl;
     }
     return arrayComuni;
 }
@@ -45,8 +36,7 @@ int main()
     int dimensione1 = sizeof(array1) / sizeof(array1[0]);
     int dimensione2 = sizeof(array2) / sizeof(array2[0]);
 
-    int* arrayComuni = arrayContaUguali(array1, array2, dimensione1, dimensione2);
+    int *arrayComuni = arrayContaUguali(array1, array2, dimensione1, dimensione2);
 
-
-    cout<<"I numeri in comune sono: "<< arrayComuni; 
+    cout << "I numeri in comune sono: " << arrayComuni;
 }
